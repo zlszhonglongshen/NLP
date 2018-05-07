@@ -42,7 +42,7 @@ def wordsCluster(textUrl, fencijieguo='fencijieguo.txt', vectorSize=100, classCo
     # word2vec向量化
     model = Word2Vec(LineSentence(fencijieguo), size=vectorSize, window=5, min_count=3, workers=4)
 
-    # 获取model里面的说有关键词
+    # 获取model里面的所有关键词
     keys = model.wv.vocab.keys()
 
     # 获取词对于的词向量
