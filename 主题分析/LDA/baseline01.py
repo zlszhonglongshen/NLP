@@ -24,7 +24,7 @@ if __name__=='__main__':
     df = sql.read_sql('select * from test',conn)
     conn.close()
     cont = df['commont']
-    #2.简单的过来某些特定词
+    #2.简单的过滤某些特定词
     pattern = r'标签|心得'
     regx = re.compile(pattern)
     r = lambda x:regx.sub('',x)
@@ -72,3 +72,4 @@ if __name__=='__main__':
     #相近词
     for s in sim:
         print(s[0],s[1])
+
