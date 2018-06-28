@@ -181,6 +181,8 @@ labels=[reverse_dictionary[i] for i in range(plot_number)]
 plot_with_labels(low_dim_embs, labels, './plot.png')
 
 #ÐÞ¸Ä
+
+#ÐÞ¸Ä
        
 
     
