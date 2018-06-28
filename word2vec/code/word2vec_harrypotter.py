@@ -16,13 +16,13 @@ from sklearn.manifold import TSNE
 @return: list of words
 '''
 def read_file(filename):
-    f=open(filename,'r')
+    f=open(filename,'r',encoding='gbk')
     file_read=f.read()
     words_=re.sub("[^a-zA-Z]+", " ",file_read).lower() #正则匹配,只留下单词，且大写改小写
     words=list(words_.split())  #length of words:1121985
     return words
     
-words=read_file('哈利波特1-7英文原版.txt')
+words=read_file('../dataset/哈利波特1-7英文原版.txt')
 
 
 vocabulary_size=2000  #预定义频繁单词库的长度
