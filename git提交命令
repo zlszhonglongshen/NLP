@@ -1,0 +1,13 @@
+1:git add .
+2:git commit -m "修改"
+3:#上傳
+git push origin master  
+4:#下載
+git pull origin master 
+
+
+
+sudo crontab -e #制定定時任務
+sudo crontab -l #查看有多少的任務
+
+
