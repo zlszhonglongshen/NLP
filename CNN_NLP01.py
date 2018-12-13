@@ -179,3 +179,7 @@ print('train accuracy:', score[1])
 score = model.evaluate(x_val, y_val, verbose=0)  # 评估模型在测试集中的效果，准确率约为97%，迭代次数多了，会进一步提升
 print('Test score:', score[0])
 print('Test accuracy:', score[1])
+
+
+
+
