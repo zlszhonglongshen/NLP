@@ -13,7 +13,7 @@ from sklearn2pmml import PMMLPipeline,sklearn2pmml
 data = np.random.rand(10,3)
 # print(data)
 
-estimator = KMeans(n_clusters=2,init='k-means++',n_jobs=-1)
+estimator = KMeans(n_clusters=2,init='k-means++',n_jobs=1)
 
 km_pipeline = PMMLPipeline([("KM",estimator)])
 
