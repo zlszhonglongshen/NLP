@@ -1,0 +1,23 @@
+```{r}
+library(r2pmml)
+library(pmml)
+library(randomForest)
+data(iris)
+
+#拆分数据为两部分，训练集和测试集
+ind = sample(2,nrow(iris),replace = T,prob =c(0.7,0.3))
+trainData = iris[ind==1,]
+testData  = iris[ind==2,]
+#trian model
+iris_rf = randomForest(Species~.,data = trainData,ntree=100,proximity=T)
+
+table(predict(iris_rf),trainData$Species)
+
+
+#convert model to pmml
+iris_rf.pmml = pmml(iris_rf,name="Iris RandomForst")
+
+#save to file iris_rf.pmml in disk 路径自己定义
+saveXML(iris_rf.pmml,"iris_rf.pmml")
+```
+
