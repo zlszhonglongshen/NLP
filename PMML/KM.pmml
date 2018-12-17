@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PMML xmlns="http://www.dmg.org/PMML-4_3" xmlns:data="http://jpmml.org/jpmml-model/InlineTable" version="4.3">
+	<Header>
+		<Application name="JPMML-SkLearn" version="1.5.8"/>
+		<Timestamp>2018-12-17T04:27:51Z</Timestamp>
+	</Header>
+	<DataDictionary>
+		<DataField name="x1" optype="continuous" dataType="double"/>
+		<DataField name="x2" optype="continuous" dataType="double"/>
+		<DataField name="x3" optype="continuous" dataType="double"/>
+	</DataDictionary>
+	<ClusteringModel functionName="clustering" modelClass="centerBased" numberOfClusters="2">
+		<MiningSchema>
+			<MiningField name="x1"/>
+			<MiningField name="x2"/>
+			<MiningField name="x3"/>
+		</MiningSchema>
+		<Output>
+			<OutputField name="Cluster" optype="categorical" dataType="string" feature="predictedValue"/>
+			<OutputField name="affinity(0)" optype="continuous" dataType="double" feature="affinity" value="0"/>
+			<OutputField name="affinity(1)" optype="continuous" dataType="double" feature="affinity" value="1"/>
+		</Output>
+		<ComparisonMeasure kind="distance" compareFunction="absDiff">
+			<squaredEuclidean/>
+		</ComparisonMeasure>
+		<ClusteringField field="x1"/>
+		<ClusteringField field="x2"/>
+		<ClusteringField field="x3"/>
+		<Cluster id="0" size="5">
+			<Array type="real">0.4183790720982093 0.46991246351225757 0.5801577849339908</Array>
+		</Cluster>
+		<Cluster id="1" size="5">
+			<Array type="real">0.8162743192504119 0.7335161625157551 0.1872040196282468</Array>
+		</Cluster>
+	</ClusteringModel>
+</PMML>

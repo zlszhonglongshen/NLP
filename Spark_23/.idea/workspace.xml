@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="970214c5-6fbb-47d4-93eb-554d6002eee7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../kaggle/I_JCAI/TOOL.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kaggle/I_JCAI/shop_features.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kaggle/I_JCAI/train_table.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kaggle/I_JCAI/weather_feature.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kaggle/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../环境配置文档" beforeDir="false" afterPath="$PROJECT_DIR$/../环境配置文档" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -37,7 +31,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/scala/ML/Kmeans01.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="133">
-              <caret line="9" column="22" lean-forward="true" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+              <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
               <folding>
                 <element signature="e#11#58#0" expanded="true" />
               </folding>
@@ -72,45 +66,13 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Spark_23" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Spark_23" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Spark_23" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Spark_23" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Spark_23" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Spark_23" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Spark_23" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Spark_23" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544750314125" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../JohnsonProjects/JohnsonProjects" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -170,15 +132,15 @@
       <workItem from="1544680009195" duration="1868000" />
       <workItem from="1544687964515" duration="1261000" />
       <workItem from="1544750939542" duration="599000" />
+      <workItem from="1545008690050" duration="668000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18044000" />
+    <option name="totallyTimeSpent" value="18712000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1377" height="912" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.19324712" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -273,7 +235,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/scala/ML/Kmeans01.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
-          <caret line="9" column="22" lean-forward="true" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
           <folding>
             <element signature="e#11#58#0" expanded="true" />
           </folding>
