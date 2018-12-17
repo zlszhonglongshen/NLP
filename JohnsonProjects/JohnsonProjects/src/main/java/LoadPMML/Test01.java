@@ -100,7 +100,7 @@ public class Test01 {
     }
 
     public static void main(String[] args) {
-        Test01 clf = new Test01("e:/RandomForestClassifier_Iris.pmml");
+        Test01 clf = new Test01("e:/xgboost.pmml");
 
         List<String> featureNames = clf.getFeatureNames();
         System.out.println("feature: " + featureNames);

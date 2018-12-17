@@ -1,4 +1,4 @@
-package LoadPMML;
+package parse_json;
 import java.io.*;
 import java.util.HashMap;
 import java.util.List;
@@ -58,9 +58,53 @@ public class Parser {
         }
 
     }
-    private void prepare(String json){
+    private void prepare(String json) {
         //clear paramsMap
         paramsMap.clear();
+        //json to map
+        jsonMap = JSON.parseObject(json);
+        //prepare data
+        List<InputField> inputFields = modelEvaluator.getActiveFields();
+        FieldName inputFieldName = null;
+        Object rawValue = null;
+        FieldValue inputFieldValue = null;
+        for (InputField inputField : inputFields) {
+            inputFieldName = inputField.getName();
+            rawValue = jsonMap.get(inputFieldName.getValue());
+            // because some varname is not used
+            if (rawValue != null) {
+                // Unsupported type transferred to string
+                if (!(rawValue instanceof String || rawValue instanceof Integer || rawValue instanceof Float || rawValue instanceof Double)) {
+                    rawValue = String.valueOf(rawValue);
+                }
+                inputFieldValue = inputField.prepare("".equals(rawValue.toString()) ? null : rawValue);
+                paramsMap.put(inputFieldName, inputFieldValue);
+            }
+        }
+    }
+        /*
+        predict method
+        json
+        return result
+         */
+        public String predict(String json){
+            //1.do prepare
+            prepare(json);
+            //2.do excute
+            String result = excute();
+            return result;
+        }
+        private String excute(){
+            Map<FieldName, ?> result = modelEvaluator.evaluate(paramsMap);
+            List<TargetField> targetFields = modelEvaluator.getTargetFields();
+            StringBuilder sb = new StringBuilder();
+            for (TargetField targetField : targetFields) {
+                FieldName targetFieldName = targetField.getName();
+
+                sb.append(result.get(targetFieldName) + ",");
+            }
+            String resultStr = sb.toString();
+            return resultStr;
 
     }
     
