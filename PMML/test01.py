@@ -20,3 +20,7 @@ km_pipeline = PMMLPipeline([("KM",estimator)])
 km_pipeline.fit(data)
 
 sklearn2pmml(km_pipeline,"KM.pmml")
+
+
+
+
