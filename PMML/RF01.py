@@ -26,3 +26,4 @@ iris_pipeline.fit(iris_df, iris.target)
 
 # 导出模型到 RandomForestClassifier_Iris.pmml 文件
 sklearn2pmml(iris_pipeline, "RandomForestClassifier_Iris.pmml")
+print("")
