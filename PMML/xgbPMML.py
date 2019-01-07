@@ -38,4 +38,4 @@ seed=1000)
 
 pipeline = PMMLPipeline([("classifier", clf)])
 pipeline.fit(iris_df, iris.target)
-sklearn2pmml(pipeline,"xgboost.pmml",with_repr = True)
+sklearn2pmml(pipeline,"xgboost.pmml.xml",with_repr = True)
