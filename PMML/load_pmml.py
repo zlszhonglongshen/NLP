@@ -24,6 +24,6 @@ Xtr, Xte, ytr, yte = train_test_split(X, y, test_size=0.33, random_state=123)
 
 df = pd.concat([Xte, yte], axis=1)
 
-clf = PMMLTreeClassifier(pmml="models/sklearn2pmml.pmml")
-clf.predict(Xte)
-clf.score(Xte, yte)
+clf = PMMLTreeClassifier(pmml="C:\\Users\\johnson.zhong\\Desktop\\sklearn-pmml-model-master\\models\\RandomForestClassifier_Iris.pmml")
+print(clf.predict(Xte))
+print(clf.score(Xte, yte))
