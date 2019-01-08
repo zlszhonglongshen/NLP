@@ -27,3 +27,20 @@ df = pd.concat([Xte, yte], axis=1)
 clf = PMMLTreeClassifier(pmml="C:\\Users\\johnson.zhong\\Desktop\\sklearn-pmml-model-master\\models\\RandomForestClassifier_Iris.pmml")
 print(clf.predict(Xte))
 print(clf.score(Xte, yte))
+
+
+
+# with open("C:\\Users\\johnson.zhong\\Desktop\\sklearn-pmml-model-master\\models\\cell_samples.data") as f:
+#     for line in f:
+#         lines = f.readline().strip().split(",")
+#         print(lines)
+df = pd.read_excel("C:\\Users\\johnson.zhong\\Desktop\\sklearn-pmml-model-master\\models\\c.xlsx")
+df = df.head(10)
+cols = [i for i in df.columns if i not in ["Class"]]
+X = df[cols]
+y = df['Class']
+Xtr, Xte, ytr, yte = train_test_split(X, y, test_size=0.2, random_state=123)
+
+clf = PMMLTreeClassifier(pmml="C:\\Users\\johnson.zhong\\Desktop\\sklearn-pmml-model-master\\models\\RF.xml")
+print(clf.predict(Xte))
+print(clf.score(Xte, yte))

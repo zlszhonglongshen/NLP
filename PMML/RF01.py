@@ -19,12 +19,12 @@ iris_df = pd.DataFrame(iris.data, columns=iris.feature_names)
 
 # 创建模型管道
 iris_pipeline = PMMLPipeline([
- ("classifier", DecisionTreeClassifier())
+ ("classifier", RandomForestClassifier())
 ])
 
 # 训练模型
 iris_pipeline.fit(iris_df, iris.target)
 
 # 导出模型到 RandomForestClassifier_Iris.pmml 文件
-sklearn2pmml(iris_pipeline, "RandomForestClassifier_Iris.pmml")
-print("")
+sklearn2pmml(iris_pipeline, "RF.pmml")
+print("程序运行完成!!!")
