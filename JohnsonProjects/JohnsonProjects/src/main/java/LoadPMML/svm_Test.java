@@ -75,7 +75,8 @@ public class svm_Test {
     public String getTargetName() {
         return modelEvaluator.getTargetFields().get(0).getName().toString();
     }
-    // 使用模型生成概率分布
+
+    // 使用模型生成预测结果
     public  Object predict(Map<FieldName, ?> arguments) {
         Map<FieldName, ?> evaluateResult = modelEvaluator.evaluate(arguments);
 
@@ -86,17 +87,6 @@ public class svm_Test {
     }
 
 
-//    // 预测结果分类
-//    public Object predict(Map<FieldName, ?> arguments) {
-//        Map<FieldName, ?> results = modelEvaluator.evaluate(arguments);
-//        List<TargetField> targetFields =modelEvaluator.getTargetFields();
-//        //获得结果，作为回归预测的例子，只有一个输出。对于分类问题等有多个输出。
-//        for (TargetField targetField : targetFields) {
-//            FieldName targetFieldName = targetField.getName();
-//            Object targetFieldValue = results.get(targetFieldName);
-//            System.out.println("target: " + targetFieldName.getValue() + " value: " + targetFieldValue);
-//        }
-//    }
 
     public static void main(String[] args) {
 //        svm_Test clf = new svm_Test("e:/xgboost.pmml");
@@ -107,10 +97,7 @@ public class svm_Test {
 
         // 构建待预测数据
         Map<FieldName, Number> waitPreSample = new HashMap <FieldName, Number>();
-//        waitPreSample.put(new FieldName("sepal length (cm)"), 10);
-//        waitPreSample.put(new FieldName("sepal width (cm)"), 1);
-//        waitPreSample.put(new FieldName("petal length (cm)"), 3);
-//        waitPreSample.put(new FieldName("petal width (cm)"), 2);
+
         waitPreSample.put(new FieldName("Clump"), 2);
         waitPreSample.put(new FieldName("UnifSize"), 1);
         waitPreSample.put(new FieldName("UnifShape"), 3);
