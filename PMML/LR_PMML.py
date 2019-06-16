@@ -24,9 +24,7 @@ from sklearn2pmml.decoration import ContinuousDomain
 from sklearn2pmml.pipeline import PMMLPipeline
 
 pipeline = PMMLPipeline([
-	("mapper", DataFrameMapper([
-		(["sepal length (cm)", "sepal width (cm)", "petal length (cm)", "petal width (cm)"], [ContinuousDomain(), Imputer()])
-	])),
+	("mapper", DataFrameMapper([(["sepal length (cm)", "sepal width (cm)", "petal length (cm)", "petal width (cm)"], [ContinuousDomain(), Imputer()])])),
 	("pca", PCA(n_components = 3)),
 	("selector", SelectKBest(k = 2)),
 	("classifier", LogisticRegression())
