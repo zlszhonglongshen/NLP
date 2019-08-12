@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python_人脸属性相关
 """
 https://flystarhe.github.io/2016/09/04/word2vec-test/
 """
@@ -9,7 +9,7 @@ logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=lo
 
 if __name__ == '__main__':
     if len(sys.argv) < 3:
-        print ("Usage: python script.py infile outfile")
+        print ("Usage: python_人脸属性相关 script.py infile outfile")
         sys.exit()
     infile, outfile = sys.argv[1:3]
     model = gensim.models.Word2Vec(gensim.models.word2vec.LineSentence(infile), size=400, window=5, min_count=5, sg=0,

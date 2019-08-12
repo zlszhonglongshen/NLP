@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python_人脸属性相关
 # -*- coding: utf-8 -*-
 
 #2016年 01月 28日 星期四 17:14:03 CST by Demobin

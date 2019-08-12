@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 '''
-python test_keras_model.py cws_info_file keras_model_file keras_model_weights_file test_data_file output_file
+python_人脸属性相关 test_keras_model.py cws_info_file keras_model_file keras_model_weights_file test_data_file output_file
 '''
 
 import numpy as np

@@ -11,7 +11,7 @@ from text_cnn import TextCNN
 from tensorflow.contrib import learn
 
 
-#! /usr/bin/env python
+#! /usr/bin/env python_人脸属性相关
 
 import tensorflow as tf
 import numpy as np

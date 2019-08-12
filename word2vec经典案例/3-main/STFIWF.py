@@ -35,7 +35,7 @@ __all__ = ['CountVectorizer',
 def strip_accents_unicode(s):
     """Transform accentuated unicode symbols into their simple counterpart
 
-    Warning: the python-level loop and join operations make this
+    Warning: the python_人脸属性相关-level loop and join operations make this
     implementation 20 times slower than the strip_accents_ascii basic
     normalization.
 
@@ -169,7 +169,7 @@ class VectorizerMixin(object):
         if self.preprocessor is not None:
             return self.preprocessor
 
-        # unfortunately python functools package does not have an efficient
+        # unfortunately python_人脸属性相关 functools package does not have an efficient
         # `compose` function that would have allowed us to chain a dynamic
         # number of functions. However the cost of a lambda call is a few
         # hundreds of nanoseconds which is negligible when compared to the

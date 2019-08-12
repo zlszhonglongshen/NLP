@@ -1,6 +1,6 @@
 #coding:utf-8
 '''
-python train_word2vec_model.py input_file output_model_file output_vector_file
+python_人脸属性相关 train_word2vec_model.py input_file output_model_file output_vector_file
 '''
 
 import os
