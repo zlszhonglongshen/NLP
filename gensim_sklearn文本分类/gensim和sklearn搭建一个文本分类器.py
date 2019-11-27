@@ -51,7 +51,7 @@ def rm_tokens(words): # 去掉一些停用次和数字
         elif words_list[i].isdigit():
             words_list.pop(i)
     return words_list
-def get_stop_words(path='/home/multiangle/coding/python_人脸属性相关/PyNLP/static/stop_words.txt'):
+def get_stop_words(path='/home/multiangle/coding/python_face/PyNLP/static/stop_words.txt'):
     file = open(path,'rb').read().decode('utf8').split('\n')
     return set(file)
 def rm_char(text):

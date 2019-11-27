@@ -1,4 +1,4 @@
-#!/usr/bin/python_人脸属性相关
+#!/usr/bin/python_face
 # -*- coding: utf-8 -*-
 import sys, codecs
 import jieba.posseg as pseg
@@ -6,7 +6,7 @@ import jieba.posseg as pseg
 # sys.setdefaultencoding('utf-8')
 if __name__ == '__main__':
     if len(sys.argv) < 3:
-        print ("Usage: python_人脸属性相关 script.py infile outfile")
+        print ("Usage: python_face script.py infile outfile")
         sys.exit()
     i = 0
     infile, outfile = sys.argv[1:3]

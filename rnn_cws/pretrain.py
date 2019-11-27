@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 '''
-python_人脸属性相关 pretrain.py input_file cws_info_filePath cws_data_filePath
+python_face pretrain.py input_file cws_info_filePath cws_data_filePath
 '''
 
 import json

@@ -1,4 +1,4 @@
-#!/usr/bin/env python_人脸属性相关
+#!/usr/bin/env python_face
 # -*- coding: utf-8  -*-
 # PCA  SVM
 import sys

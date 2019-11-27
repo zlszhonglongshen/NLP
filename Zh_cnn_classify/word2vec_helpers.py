@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 '''
-python_人脸属性相关 word2vec_helpers.py input_file output_model_file output_vector_file
+python_face word2vec_helpers.py input_file output_model_file output_vector_file
 '''
 
 # import modules & set up logging

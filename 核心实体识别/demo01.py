@@ -66,7 +66,7 @@ train_and_predict.py
 
 包含了从训练到预测的整个过程，只要“未开放的验证数据”格式跟“开放的测试数据”opendata_20w格式一样，那么就可以
 与train_and_predict.py放在同一目录，然后运行
-python_人脸属性相关 train_and_predict.py
+python_face train_and_predict.py
 就可以完成整个过程，并且会生成一系列文件：
 
 --------------------------------------------------------------

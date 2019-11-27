@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 '''
-python_人脸属性相关 train_keras_model.py cws_info_filePath cws_data_filePath output_keras_model_file output_keras_model_weights_file
+python_face train_keras_model.py cws_info_filePath cws_data_filePath output_keras_model_file output_keras_model_weights_file
 '''
 
 import numpy as np

@@ -1,4 +1,4 @@
-#!/usr/bin/python_人脸属性相关
+#!/usr/bin/python_face
 #coding:utf-8
 import sys
 # reload(sys)
